@@ -7,7 +7,7 @@ import traceback
 from functools import reduce
 
 ###################################################
-tg_key = '1683239661:AAFcEH4HMuUj1pI4KnJleRZ9tt3gkv8kttU'
+# tg_key = '1683239661:AAFcEH4HMuUj1pI4KnJleRZ9tt3gkv8kttU'
 m = []
 n = []
 
