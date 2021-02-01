@@ -1,0 +1,33 @@
+name: 互助码
+
+on:
+  schedule:
+    - cron: '*/30 * * * * '
+  watch:
+    types: [started]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        
+      - name: 'Set up Python'
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.7
+         
+      - name: 'Install requirements'
+        run: pip install -r ./requirements.txt 
+        
+      - name: 'run 互助码' 
+        run: python3 getCode.py 
+        
+      
+      - name: Upload to this repo
+        run: |
+          git config --global user.name "v2ex-签到通知"
+          git config --global user.email "970248425@qq.com" 
+          git add . 
+          git commit -m 'upload 签到结果'  
+          git push -u origin master
