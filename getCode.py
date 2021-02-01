@@ -25,7 +25,7 @@ if not tg_key:
 
 # 写入数据
 def getCode(tg_key):
-    url = f'https://api.telegram.org/bot{tg_key}/getUpdates'
+    url = f'''https://api.telegram.org/bot{tg_key}/getUpdates'''
     try:
         resp = requests.get(url).json()
         for i in resp['result']:
