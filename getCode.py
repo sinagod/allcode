@@ -32,7 +32,7 @@ def getCode(tg_key):
         for i in resp['result']:
             if not (i['message']['text'].rfind('/jdfruit')):
                 try:
-                    with open('jdfruit_code.txt', 'a') as f:
+                    with open('jdfruit_code.txt', 'a+') as f:
                         f.write(i['message']['text'].split(' ')[1])
                         f.write('\n')
                 except IndexError:
