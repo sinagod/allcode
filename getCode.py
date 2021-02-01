@@ -14,12 +14,12 @@ n = []
 
 ###################################################
 
-# if "TG_KEY" in os.environ:
-#     tg_key = os.environ["TG_KEY"]
-#
-# if not tg_key:
-#     print(f'''【通知参数】 is empty,DTask is over.''')
-#     exit()
+if "TG_KEY" in os.environ:
+    tg_key = os.environ["TG_KEY"]
+
+if not tg_key:
+    print(f'''【通知参数】 is empty,DTask is over.''')
+    exit()
 
 
 ###################################################
