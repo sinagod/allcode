@@ -1,5 +1,6 @@
 import os
 import json
+import time
 import requests
 import operator
 import traceback
@@ -37,6 +38,8 @@ def getCode(tg_key):
                 except IndexError:
                     pass
                 continue
+        time.sleep(15)
+        formateCode()
     except:
         print(traceback.format_exc())
         return
@@ -64,6 +67,7 @@ def loadCode(func):
 
 def run():
     getCode(tg_key)
+    time.sleep(10)
     loadCode(formateCode())
     
 
