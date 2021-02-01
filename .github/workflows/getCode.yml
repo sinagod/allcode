@@ -27,8 +27,8 @@ jobs:
       
       - name: Upload to this repo
         run: |
-          git config --global user.name "v2ex-签到通知"
+          git config --global user.name "AllCode"
           git config --global user.email "970248425@qq.com" 
           git add . 
-          git commit -m 'upload 签到结果'  
+          git commit -m 'upload 水果码'  
           git push -u origin master
