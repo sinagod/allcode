@@ -6,19 +6,19 @@ import traceback
 from functools import reduce
 
 ###################################################
-# tg_key = ''
+tg_key = '1683239661:AAFcEH4HMuUj1pI4KnJleRZ9tt3gkv8kttU'
 m = []
 n = []
 
 
 ###################################################
 
-if "TG_KEY" in os.environ:
-    tg_key = os.environ["TG_KEY"]
+# if "TG_KEY" in os.environ:
+#     tg_key = os.environ["TG_KEY"]
 
-if not tg_key:
-    print(f'''【通知参数】 is empty,DTask is over.''')
-    exit()
+# if not tg_key:
+#     print(f'''【通知参数】 is empty,DTask is over.''')
+#     exit()
 
 
 ###################################################
