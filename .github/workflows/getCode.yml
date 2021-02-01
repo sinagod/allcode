@@ -22,7 +22,8 @@ jobs:
         
       - name: 'run 互助码' 
         run: python3 getCode.py 
-        
+        env:
+             TG_KEY: ${{ secrets.TG_KEY }}  #必须
       
       - name: Upload to this repo
         run: |
