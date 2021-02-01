@@ -6,7 +6,7 @@ import traceback
 from functools import reduce
 
 ###################################################
-tg_key = ''
+# tg_key = ''
 m = []
 n = []
 
